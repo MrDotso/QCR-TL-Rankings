@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*
+QCR Translation Groups Page Styles
+*/
+
+.profile-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.profile-card h2 {
+    margin-bottom: 8px;
+}
+
+.profile-card p {
+    max-width: none;
+}
+
+.score-grid {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    margin: 16px 0;
+    overflow: hidden;
+}
+
+.score-grid div {
+    background: var(--surface-strong);
+    border-right: 1px solid var(--line);
+    padding: 12px;
+}
+
+.score-grid div:last-child {
+    border-right: 0;
+}
+
+.score-grid strong,
+.score-grid span {
+    display: block;
+}
+
+.score-grid span {
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+.notes-list {
+    display: grid;
+    gap: 8px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 980px) {
+    .score-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .score-grid div:nth-child(2n) {
+        border-right: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .score-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .score-grid div,
+    .score-grid div:nth-child(2n) {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .score-grid div:last-child {
+        border-bottom: 0;
+    }
+}

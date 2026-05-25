@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*
+QCR Manhua Rankings Page Styles
+*/
+
+.empty-state {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.empty-state h2 {
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    max-width: none;
+}

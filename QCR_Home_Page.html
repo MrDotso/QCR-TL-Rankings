@@ -1,0 +1,109 @@
+<!--
+Creator: Benjamin Dotson
+Date: 5/22/2026
+Description: Home page for the QCR website.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="QCR_Home_Page.css">
+    <title>QCR - Home</title>
+</head>
+<body class="page-home">
+    <header class="site-header">
+        <a class="brand" href="QCR_Home_Page.html" aria-label="QCR home">
+            <img src="../QCR TL Rankings Logo Materials/Discord Profile Image With fountain pen.png" alt="QCR fountain pen logo">
+            <span>
+                <strong>QCR</strong>
+                <small>Quality Consistency Readability Rankings</small>
+            </span>
+        </a>
+        <nav class="NavigationBar" aria-label="Main navigation">
+            <a class="navTab active" href="QCR_Home_Page.html">Home</a>
+            <a class="navTab" href="Request_Evaluation.html">Request Evaluation</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="Rankings.html">Rankings</a>
+                <div class="dropdown-content">
+                    <a href="Rankings.html">Overall Rankings</a>
+                    <a href="Manga_Rankings.html">Manga Rankings</a>
+                    <a href="Manhwa_Rankings.html">Manhwa Rankings</a>
+                    <a href="Manhua_Rankings.html">Manhua Rankings</a>
+                    <a href="Webtoon_Rankings.html">Webtoon Rankings</a>
+                </div>
+            </div>
+            <a class="navTab" href="Translation_Groups.html">Translation Groups</a>
+            <a class="navTab" href="Evaluation_Criteria.html">Evaluation Criteria</a>
+            <a class="navTab" href="Tag_Groups.html">Tag Groups</a>
+            <a class="navTab" href="Feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">Translation Group Ratings</p>
+            <h1>Rankings for manga, manhua, manhwa, and webtoon translation groups.</h1>
+            <p>QCR evaluates translation groups through readability, consistency, translation quality, localization quality, and picture quality. The goal is to make it easier to compare groups at a glance while still preserving the reasoning behind each rank.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2>Current Reference Points</h2>
+                    <p>These are the standard candles used to anchor the grading system.</p>
+                </div>
+            </div>
+            <div class="grid three">
+                <article class="card">
+                    <span class="snapshot-number">S</span>
+                    <h3>Gold Standard: Webtoon</h3>
+                    <p>Official-quality translations and the current top reference point for the system.</p>
+                </article>
+                <article class="card">
+                    <span class="snapshot-number">C-</span>
+                    <h3>Pivot: Valir Scans</h3>
+                    <p>The midpoint reference for readable but flawed translations.</p>
+                </article>
+                <article class="card">
+                    <span class="snapshot-number">F-</span>
+                    <h3>Floor: Nyx Scans</h3>
+                    <p>The current lower-bound reference point for the ranking framework.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2>Ranking Areas</h2>
+                    <p>The website is organized around the overall list, individual group profiles, criteria details, and tag definitions.</p>
+                </div>
+            </div>
+            <div class="grid four">
+                <article class="card">
+                    <h3>Overall Rankings</h3>
+                    <p>The main tier list for all translation groups currently ranked.</p>
+                    <p><a href="Rankings.html">View rankings</a></p>
+                </article>
+                <article class="card">
+                    <h3>Group Profiles</h3>
+                    <p>Detailed breakdowns for groups with completed score sheets.</p>
+                    <p><a href="Translation_Groups.html">View groups</a></p>
+                </article>
+                <article class="card">
+                    <h3>Criteria</h3>
+                    <p>Point values, grade ranges, standard candles, and grading notes.</p>
+                    <p><a href="Evaluation_Criteria.html">View criteria</a></p>
+                </article>
+                <article class="card">
+                    <h3>Tags</h3>
+                    <p>The taxonomy used to describe quality, access, activity, status, and reputation.</p>
+                    <p><a href="Tag_Groups.html">View tags</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

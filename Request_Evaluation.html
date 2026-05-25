@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="Request_Evaluation.css">
+    <title>QCR - Request Evaluation</title>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="QCR_Home_Page.html" aria-label="QCR home">
+            <img src="../QCR TL Rankings Logo Materials/Discord Profile Image With fountain pen.png" alt="QCR fountain pen logo">
+            <span><strong>QCR</strong><small>Quality Consistency Readability Rankings</small></span>
+        </a>
+        <nav class="NavigationBar" aria-label="Main navigation">
+            <a class="navTab" href="QCR_Home_Page.html">Home</a>
+            <a class="navTab active" href="Request_Evaluation.html">Request Evaluation</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="Rankings.html">Rankings</a>
+                <div class="dropdown-content">
+                    <a href="Rankings.html">Overall Rankings</a>
+                    <a href="Manga_Rankings.html">Manga Rankings</a>
+                    <a href="Manhwa_Rankings.html">Manhwa Rankings</a>
+                    <a href="Manhua_Rankings.html">Manhua Rankings</a>
+                    <a href="Webtoon_Rankings.html">Webtoon Rankings</a>
+                </div>
+            </div>
+            <a class="navTab" href="Translation_Groups.html">Translation Groups</a>
+            <a class="navTab" href="Evaluation_Criteria.html">Evaluation Criteria</a>
+            <a class="navTab" href="Tag_Groups.html">Tag Groups</a>
+            <a class="navTab" href="Feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">Evaluation Queue</p>
+            <h1>Request a translation group evaluation.</h1>
+            <p>Use this form to capture group names, example series, medium, links, and context for future ranking work.</p>
+        </section>
+
+        <section class="section">
+            <form class="form card" data-local-form="evaluation-request">
+                <div class="form-row">
+                    <label for="group-name">Translation group</label>
+                    <input id="group-name" name="groupName" type="text" autocomplete="organization" required>
+                </div>
+                <div class="form-row">
+                    <label for="series-name">Example series</label>
+                    <input id="series-name" name="seriesName" type="text">
+                </div>
+                <div class="form-row">
+                    <label for="medium">Medium</label>
+                    <select id="medium" name="medium">
+                        <option value="Manga">Manga</option>
+                        <option value="Manhwa">Manhwa</option>
+                        <option value="Manhua">Manhua</option>
+                        <option value="Webtoon">Webtoon</option>
+                        <option value="Mixed">Mixed / Unsure</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="source-link">Source link</label>
+                    <input id="source-link" name="sourceLink" type="url" placeholder="https://">
+                </div>
+                <div class="form-row">
+                    <label for="request-notes">Notes</label>
+                    <textarea id="request-notes" name="notes" placeholder="Quality pattern, chapters checked, concerns, or comparison groups."></textarea>
+                </div>
+                <div class="button-row">
+                    <button class="primary-button" type="submit">Save Request</button>
+                    <p class="form-status" data-form-status aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="QCR_Site.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*
+QCR Home Page Styles
+Author: Benjamin Dotson
+Date: 5/24/2026
+*/
+
+.page-home .hero {
+    padding-top: 36px;
+}
+
+.snapshot-number {
+    color: var(--gold);
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 8px;
+}
