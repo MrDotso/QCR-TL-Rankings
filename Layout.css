@@ -361,9 +361,8 @@ table {
     width: 100%;
 }
 
-tbody tr:hover, 
-tbody tr th:hover,
-tbody tr td:hover {
+thead th:hover,
+tbody td:hover {
     background: #1d222d;
 }
 

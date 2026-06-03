@@ -1,3 +1,24 @@
+const rankingLinks = [
+    { href: "Rankings.html", label: "Ranking Hub" },
+    { href: "Individual_Rankings.html", label: "Individual Translators" },
+    { href: "Official_Company_Rankings.html", label: "Official / Company Platforms" },
+    { href: "Unofficial_Small_Group_Rankings.html", label: "Unofficial Small Groups" },
+    { href: "Unofficial_Large_Group_Rankings.html", label: "Unofficial Large Groups" }
+];
+
+document.querySelectorAll(".dropdown").forEach((dropdown) => {
+    const trigger = dropdown.querySelector(".dropbtn");
+    const menu = dropdown.querySelector(".dropdown-content");
+
+    if (!trigger || !menu || !trigger.textContent.includes("Rankings")) {
+        return;
+    }
+
+    menu.innerHTML = rankingLinks
+        .map((link) => `<a href="${link.href}">${link.label}</a>`)
+        .join("");
+});
+
 const localForms = document.querySelectorAll("[data-local-form]");
 
 localForms.forEach((form) => {
