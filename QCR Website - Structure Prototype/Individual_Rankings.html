@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="Rankings.css">
+    <title>QCR - Individual Translator Rankings</title>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="QCR_Home_Page.html" aria-label="QCR home">
+            <img src="../QCR TL Rankings - Logo Materials/Discord Profile Image With fountain pen.png" alt="QCR fountain pen logo">
+            <span><strong>QCR</strong><small>Quality Consistency Readability Rankings</small></span>
+        </a>
+        <nav class="NavigationBar" aria-label="Main navigation">
+            <a class="navTab" href="QCR_Home_Page.html">Home</a>
+            <a class="navTab" href="Request_Evaluation.html">Request Evaluation</a>
+            <div class="dropdown">
+                <a class="dropbtn active" href="Rankings.html">Rankings</a>
+                <div class="dropdown-content">
+                    <a href="Rankings.html">Ranking Hub</a>
+                    <a href="Individual_Rankings.html">Individual Translators</a>
+                    <a href="Official_Company_Rankings.html">Official / Company Platforms</a>
+                    <a href="Unofficial_Small_Group_Rankings.html">Unofficial Small Groups</a>
+                    <a href="Unofficial_Large_Group_Rankings.html">Unofficial Large Groups</a>
+                </div>
+            </div>
+            <a class="navTab" href="Translation_Groups.html">Translation Groups</a>
+            <a class="navTab" href="Evaluation_Criteria.html">Evaluation Criteria</a>
+            <a class="navTab" href="Example_Ranking.html">Example Ranking</a>
+            <a class="navTab" href="Tag_Groups.html">Tag Groups</a>
+            <a class="navTab" href="Feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">Size Category</p>
+            <h1>Individual translator rankings.</h1>
+            <p>Solo translators are evaluated in their own ranking category so they are not compared directly against staffed groups or official platforms.</p>
+            <div data-ranking-nav></div>
+        </section>
+
+        <div data-size-ranking="individual"></div>
+    </main>
+
+    <script src="QCR_Site.js"></script>
+    <script src="data/QCR_Groups.js"></script>
+    <script src="scripts/renderRankings.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*
+QCR Tag Groups Page Styles
+*/
+
+.definition-list {
+    display: grid;
+    gap: 12px;
+}
+
+.definition-list div {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 12px;
+}
+
+.definition-list div:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.definition-list dt {
+    color: var(--text);
+    font-weight: 800;
+}

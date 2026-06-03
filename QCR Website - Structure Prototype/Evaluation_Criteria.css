@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*
+QCR Evaluation Criteria Page Styles
+*/
+
+.criterion-spreads table {
+    min-width: 0;
+    table-layout: fixed;
+}
+
+.criterion-spreads th,
+.criterion-spreads td {
+    width: 50%;
+}
+
+.overall-grade-scale tbody td:hover {
+    background: transparent;
+}
+
+.overall-grade-scale tbody tr:has(td:nth-child(1):hover) td:nth-child(1),
+.overall-grade-scale tbody tr:has(td:nth-child(1):hover) td:nth-child(2),
+.overall-grade-scale tbody tr:has(td:nth-child(2):hover) td:nth-child(1),
+.overall-grade-scale tbody tr:has(td:nth-child(2):hover) td:nth-child(2),
+.overall-grade-scale tbody tr:has(td:nth-child(3):hover) td:nth-child(3),
+.overall-grade-scale tbody tr:has(td:nth-child(3):hover) td:nth-child(4),
+.overall-grade-scale tbody tr:has(td:nth-child(4):hover) td:nth-child(3),
+.overall-grade-scale tbody tr:has(td:nth-child(4):hover) td:nth-child(4),
+.overall-grade-scale tbody tr:has(td:nth-child(5):hover) td:nth-child(5),
+.overall-grade-scale tbody tr:has(td:nth-child(5):hover) td:nth-child(6),
+.overall-grade-scale tbody tr:has(td:nth-child(6):hover) td:nth-child(5),
+.overall-grade-scale tbody tr:has(td:nth-child(6):hover) td:nth-child(6) {
+    background: #1d222d;
+}
+
+.notes-list {
+    display: grid;
+    gap: 8px;
+    margin-top: 10px;
+    padding-left: 20px;
+}

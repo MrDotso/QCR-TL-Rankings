@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/*
+QCR Home Page Styles
+Author: Benjamin Dotson
+Date: 5/24/2026
+*/
+
+.home-layout {
+    width: min(1240px, calc(100% - 32px));
+}
+
+.home-board {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas:
+        "logo intro links"
+        "logo rankings links"
+        "more more more";
+    grid-template-columns: 230px minmax(0, 1fr) 270px;
+    overflow: hidden;
+}
+
+.home-logo-panel,
+.home-intro-panel,
+.home-link-panel,
+.home-ranking-panel,
+.home-more-panel {
+    padding: 22px;
+}
+
+.home-logo-panel {
+    align-content: start;
+    border-right: 1px solid var(--line);
+    display: grid;
+    gap: 14px;
+    grid-area: logo;
+}
+
+.home-logo-panel img {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    width: 120px;
+}
+
+.home-logo-panel h2 {
+    font-size: 1.28rem;
+}
+
+.home-intro-panel {
+    align-content: center;
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    gap: 12px;
+    grid-area: intro;
+    min-height: 250px;
+}
+
+.home-intro-panel h1 {
+    max-width: 850px;
+}
+
+.home-link-panel {
+    align-content: start;
+    border-left: 1px solid var(--line);
+    display: grid;
+    gap: 10px;
+    grid-area: links;
+}
+
+.home-link-panel a,
+.home-more-grid a {
+    border: 1px solid #415468;
+    border-radius: 6px;
+    color: var(--text);
+    display: grid;
+    gap: 3px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.home-link-panel a:hover,
+.home-more-grid a:hover {
+    background: #24303d;
+    color: var(--cyan);
+}
+
+.home-ranking-panel {
+    border-bottom: 1px solid var(--line);
+    grid-area: rankings;
+}
+
+.ranking-strip {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.reference-rank {
+    align-items: start;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto minmax(0, 1fr);
+}
+
+.reference-rank h3 {
+    margin-bottom: 2px;
+}
+
+.home-more-panel {
+    grid-area: more;
+}
+
+.home-more-panel h2 {
+    margin-bottom: 14px;
+}
+
+.home-more-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.home-more-grid span {
+    color: var(--muted);
+}
+
+@media screen and (max-width: 980px) {
+    .home-board {
+        grid-template-areas:
+            "logo intro"
+            "links links"
+            "rankings rankings"
+            "more more";
+        grid-template-columns: 190px minmax(0, 1fr);
+    }
+
+    .home-link-panel {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .ranking-strip,
+    .home-more-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home-layout {
+        width: min(100% - 20px, 1240px);
+    }
+
+    .home-board {
+        grid-template-areas:
+            "logo"
+            "intro"
+            "links"
+            "rankings"
+            "more";
+        grid-template-columns: 1fr;
+    }
+
+    .home-logo-panel {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .home-logo-panel img {
+        width: 86px;
+    }
+
+    .home-link-panel,
+    .ranking-strip,
+    .home-more-grid {
+        grid-template-columns: 1fr;
+    }
+}
