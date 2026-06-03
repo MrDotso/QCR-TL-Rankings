@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Creator: Benjamin Dotson
 Date: 5/22/2026
 Description: Home page for the QCR website.
@@ -15,7 +15,7 @@ Description: Home page for the QCR website.
 <body class="page-home">
     <header class="site-header">
         <a class="brand" href="QCR_Home_Page.html" aria-label="QCR home">
-            <img src="../QCR TL Rankings Logo Materials/Discord Profile Image With fountain pen.png" alt="QCR fountain pen logo">
+            <img src="../QCR TL Rankings - Logo Materials/Discord Profile Image With fountain pen.png" alt="QCR fountain pen logo">
             <span>
                 <strong>QCR</strong>
                 <small>Quality Consistency Readability Rankings</small>
@@ -36,74 +36,96 @@ Description: Home page for the QCR website.
             </div>
             <a class="navTab" href="Translation_Groups.html">Translation Groups</a>
             <a class="navTab" href="Evaluation_Criteria.html">Evaluation Criteria</a>
+            <a class="navTab" href="Example_Ranking.html">Example Ranking</a>
             <a class="navTab" href="Tag_Groups.html">Tag Groups</a>
             <a class="navTab" href="Feedback.html">Feedback</a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <p class="eyebrow">Translation Group Ratings</p>
-            <h1>Rankings for manga, manhua, manhwa, and webtoon translation groups.</h1>
-            <p>QCR evaluates translation groups through readability, consistency, translation quality, localization quality, and picture quality. The goal is to make it easier to compare groups at a glance while still preserving the reasoning behind each rank.</p>
-        </section>
+    <main class="home-layout">
+        <section class="home-board" aria-labelledby="home-title">
+            <aside class="home-logo-panel">
+                <img src="../QCR TL Rankings - Logo Materials/Discord Profile Image With fountain pen.png" alt="QCR fountain pen logo">
+                <p class="eyebrow">QCR</p>
+                <h2>Quality Consistency Readability</h2>
+            </aside>
 
-        <section class="section">
-            <div class="section-header">
-                <div>
-                    <h2>Current Reference Points</h2>
-                    <p>These are the standard candles used to anchor the grading system.</p>
-                </div>
-            </div>
-            <div class="grid three">
-                <article class="card">
-                    <span class="snapshot-number">S</span>
-                    <h3>Gold Standard: Webtoon</h3>
-                    <p>Official-quality translations and the current top reference point for the system.</p>
-                </article>
-                <article class="card">
-                    <span class="snapshot-number">C-</span>
-                    <h3>Pivot: Valir Scans</h3>
-                    <p>The midpoint reference for readable but flawed translations.</p>
-                </article>
-                <article class="card">
-                    <span class="snapshot-number">F-</span>
-                    <h3>Floor: Nyx Scans</h3>
-                    <p>The current lower-bound reference point for the ranking framework.</p>
-                </article>
-            </div>
-        </section>
+            <section class="home-intro-panel">
+                <p class="eyebrow">Translation Group Ratings</p>
+                <h1 id="home-title">Rankings for manga, manhua, manhwa, and webtoon translations.</h1>
+                <p>QCR compares groups through readability, consistency, translation quality, localization quality, and picture quality. The site is built around the score framework, the ranked groups, and the tags that explain why a group lands where it does.</p>
+            </section>
 
-        <section class="section">
-            <div class="section-header">
-                <div>
-                    <h2>Ranking Areas</h2>
-                    <p>The website is organized around the overall list, individual group profiles, criteria details, and tag definitions.</p>
+            <nav class="home-link-panel" aria-label="Home shortcuts">
+                <a href="Rankings.html">Overall Rankings</a>
+                <a href="Translation_Groups.html">Group Profiles</a>
+                <a href="Evaluation_Criteria.html">Criteria</a>
+                <a href="Example_Ranking.html">Example Walkthrough</a>
+                <a href="Tag_Groups.html">Tag Guide</a>
+                <a href="Request_Evaluation.html">Request Evaluation</a>
+                <a href="Feedback.html">Feedback</a>
+            </nav>
+
+            <section class="home-ranking-panel">
+                <div class="section-header">
+                    <div>
+                        <h2>Reference Rankings</h2>
+                        <p>The standard candles used to anchor the current grading framework.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="grid four">
-                <article class="card">
-                    <h3>Overall Rankings</h3>
-                    <p>The main tier list for all translation groups currently ranked.</p>
-                    <p><a href="Rankings.html">View rankings</a></p>
-                </article>
-                <article class="card">
-                    <h3>Group Profiles</h3>
-                    <p>Detailed breakdowns for groups with completed score sheets.</p>
-                    <p><a href="Translation_Groups.html">View groups</a></p>
-                </article>
-                <article class="card">
-                    <h3>Criteria</h3>
-                    <p>Point values, grade ranges, standard candles, and grading notes.</p>
-                    <p><a href="Evaluation_Criteria.html">View criteria</a></p>
-                </article>
-                <article class="card">
-                    <h3>Tags</h3>
-                    <p>The taxonomy used to describe quality, access, activity, status, and reputation.</p>
-                    <p><a href="Tag_Groups.html">View tags</a></p>
-                </article>
-            </div>
+                <div class="ranking-strip">
+                    <article class="reference-rank">
+                        <span class="grade grade-s">S</span>
+                        <div>
+                            <h3>Webtoon</h3>
+                            <p>Gold standard reference point.</p>
+                        </div>
+                    </article>
+                    <article class="reference-rank">
+                        <span class="grade grade-c">C-</span>
+                        <div>
+                            <h3>Valir Scans</h3>
+                            <p>Pivot for readable but flawed work.</p>
+                        </div>
+                    </article>
+                    <article class="reference-rank">
+                        <span class="grade grade-f">F-</span>
+                        <div>
+                            <h3>Nyx Scans</h3>
+                            <p>Current lower-bound reference point.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="home-more-panel">
+                <h2>Browse the Framework</h2>
+                <div class="home-more-grid">
+                    <a href="Rankings.html">
+                        <strong>Rankings</strong>
+                        <span>Tier list and official source notes.</span>
+                    </a>
+                    <a href="Translation_Groups.html">
+                        <strong>Groups</strong>
+                        <span>Score sheets and profile notes.</span>
+                    </a>
+                    <a href="Evaluation_Criteria.html">
+                        <strong>Criteria</strong>
+                        <span>Point values and grade spreads.</span>
+                    </a>
+                    <a href="Example_Ranking.html">
+                        <strong>Example</strong>
+                        <span>Walkthrough for building a full ranking.</span>
+                    </a>
+                    <a href="Tag_Groups.html">
+                        <strong>Tags</strong>
+                        <span>Quality, access, activity, and status labels.</span>
+                    </a>
+                </div>
+            </section>
         </section>
     </main>
 </body>
 </html>
+
+

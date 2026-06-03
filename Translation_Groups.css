@@ -4,19 +4,208 @@
 QCR Translation Groups Page Styles
 */
 
-.profile-card {
+.profile-stack {
+    display: grid;
+    gap: 28px;
+}
+
+.translation-groups-layout {
+    align-items: start;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+}
+
+.translation-side-panel {
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 8px;
+    max-height: calc(100vh - 32px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 18px;
+    position: static;
+}
+
+.translation-side-panel .section-header {
+    align-items: start;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.translation-side-panel .section-header p {
+    max-width: none;
+}
+
+.translation-main-content {
+    display: grid;
+    gap: 28px;
+    min-width: 0;
+}
+
+.group-directory {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr;
+}
+
+.group-directory a {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--text);
+    display: grid;
+    gap: 4px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.group-directory a:hover {
+    background: #24303d;
+    color: var(--cyan);
+}
+
+.group-directory span {
+    color: var(--muted);
+}
+
+.group-profile {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas:
+        "logo name links"
+        "rank main links"
+        "tags main members"
+        "about about about";
+    grid-template-columns: minmax(300px, 0.36fr) minmax(0, 1fr) minmax(210px, 0.24fr);
+    overflow: hidden;
+}
+
+.group-logo-cell,
+.group-rank-cell,
+.group-tags-cell,
+.group-name-cell,
+.group-main-cell,
+.group-link-cell,
+.group-members-cell,
+.group-about-cell {
     padding: 18px;
 }
 
-.profile-card h2 {
-    margin-bottom: 8px;
+.group-logo-cell {
+    border-bottom: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    display: grid;
+    gap: 12px;
+    grid-area: logo;
 }
 
-.profile-card p {
+.group-logo-mark {
+    align-items: center;
+    background: var(--surface-strong);
+    border: 1px solid #415468;
+    border-radius: 8px;
+    color: var(--text);
+    display: inline-flex;
+    font-size: 1.8rem;
+    font-weight: 900;
+    height: 92px;
+    justify-content: center;
+    width: 92px;
+}
+
+.group-rank-cell {
+    border-bottom: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    display: grid;
+    gap: 8px;
+    grid-area: rank;
+}
+
+.group-rank-cell .grade {
+    font-size: 1rem;
+    justify-self: start;
+}
+
+.group-tags-cell {
+    border-right: 1px solid var(--line);
+    grid-area: tags;
+    min-width: 0;
+}
+
+.group-tags-cell .badge-list {
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 100%;
+}
+
+.group-tags-cell .badge {
+    max-width: calc(100% - 8px);
+    width: max-content;
+}
+
+.group-tags-cell h3,
+.group-main-cell h3,
+.group-link-cell h3,
+.group-members-cell h3,
+.group-about-cell h3 {
+    margin-bottom: 10px;
+}
+
+.group-name-cell {
+    border-bottom: 1px solid var(--line);
+    grid-area: name;
+}
+
+.group-name-cell h2 {
+    font-size: clamp(1.75rem, 3vw, 2.35rem);
+    margin: 4px 0 8px;
+    overflow-wrap: anywhere;
+}
+
+.group-name-cell p,
+.group-main-cell p,
+.group-members-cell p {
     max-width: none;
+}
+
+.group-main-cell {
+    grid-area: main;
+}
+
+.group-link-cell {
+    border-left: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    gap: 10px;
+    grid-area: links;
+    align-content: start;
+}
+
+.group-link-cell a {
+    border: 1px solid #415468;
+    border-radius: 6px;
+    color: var(--text);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.group-link-cell a:hover {
+    background: #24303d;
+    color: var(--cyan);
+}
+
+.group-members-cell {
+    border-left: 1px solid var(--line);
+    grid-area: members;
+}
+
+.group-about-cell {
+    border-top: 1px solid var(--line);
+    grid-area: about;
 }
 
 .score-grid {
@@ -24,7 +213,7 @@ QCR Translation Groups Page Styles
     border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    margin: 16px 0;
+    margin-top: 16px;
     overflow: hidden;
 }
 
@@ -55,7 +244,39 @@ QCR Translation Groups Page Styles
     padding-left: 20px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1050px) {
+    .translation-groups-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .translation-side-panel {
+        max-height: 360px;
+    }
+
+    .group-profile {
+        grid-template-areas:
+            "logo name"
+            "rank main"
+            "tags main"
+            "links members"
+            "about about";
+        grid-template-columns: minmax(300px, 0.48fr) minmax(0, 1fr);
+    }
+
+    .group-link-cell,
+    .group-members-cell {
+        border-top: 1px solid var(--line);
+    }
+
+    .group-link-cell {
+        border-left: 0;
+        border-right: 1px solid var(--line);
+    }
+
+    .group-members-cell {
+        border-left: 0;
+    }
+
     .score-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -65,7 +286,36 @@ QCR Translation Groups Page Styles
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
+    .group-profile {
+        grid-template-areas:
+            "logo"
+            "name"
+            "rank"
+            "tags"
+            "main"
+            "links"
+            "members"
+            "about";
+        grid-template-columns: 1fr;
+    }
+
+    .group-logo-cell,
+    .group-rank-cell,
+    .group-tags-cell,
+    .group-link-cell,
+    .group-members-cell {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .group-tags-cell,
+    .group-main-cell,
+    .group-link-cell,
+    .group-members-cell {
+        border-top: 1px solid var(--line);
+    }
+
     .score-grid {
         grid-template-columns: 1fr;
     }

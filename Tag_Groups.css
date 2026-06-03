@@ -23,3 +23,59 @@ QCR Tag Groups Page Styles
     color: var(--text);
     font-weight: 800;
 }
+
+.tag-category-card {
+    border-left: 6px solid #415468;
+}
+
+.tag-stability-card {
+    border-left-color: #70d6ff;
+}
+
+.tag-quality-card {
+    border-left-color: #74d99f;
+}
+
+.tag-joke-card {
+    border-left-color: #c5a3ff;
+}
+
+.tag-judgment-card {
+    border-left-color: #ff6b6b;
+}
+
+.tag-access-card {
+    border-left-color: #f2c14e;
+}
+
+.tag-pricing-card {
+    border-left-color: #ffb06b;
+}
+
+.tag-reputation-card {
+    border-left-color: #a7d66d;
+}
+
+.tag-standard-card {
+    border-left-color: #8bbcff;
+}
+
+.tag-mtl-card {
+    border-left-color: #e68aff;
+}
+
+.tag-proofreading-card {
+    border-left-color: #7be7d4;
+}
+
+.tag-activity-card {
+    border-left-color: #d8d66d;
+}
+
+.tag-size-card {
+    border-left-color: #a7a3ff;
+}
+
+.tag-status-card {
+    border-left-color: #7fd0ff;
+}

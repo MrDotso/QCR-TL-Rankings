@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 <body>
     <header class="site-header">
         <a class="brand" href="QCR_Home_Page.html" aria-label="QCR home">
-            <img src="../QCR TL Rankings Logo Materials/Discord Profile Image With fountain pen.png" alt="QCR fountain pen logo">
+            <img src="../QCR TL Rankings - Logo Materials/Discord Profile Image With fountain pen.png" alt="QCR fountain pen logo">
             <span>
                 <strong>QCR</strong>
                 <small>Quality Consistency Readability Rankings</small>
@@ -31,6 +31,7 @@
             </div>
             <a class="navTab active" href="Translation_Groups.html">Translation Groups</a>
             <a class="navTab" href="Evaluation_Criteria.html">Evaluation Criteria</a>
+            <a class="navTab" href="Example_Ranking.html">Example Ranking</a>
             <a class="navTab" href="Tag_Groups.html">Tag Groups</a>
             <a class="navTab" href="Feedback.html">Feedback</a>
         </nav>
@@ -40,157 +41,300 @@
         <section class="hero">
             <p class="eyebrow">Detailed Profiles</p>
             <h1>Translation group score sheets.</h1>
-            <p>These profiles transfer the completed overall rank files into a consistent website format with tags, grade breakdowns, point totals, picture quality, and notes.</p>
+            <p>Each profile follows the drawn layout: logo/identity on the left, rank and tags underneath, the main reason for the rank in the center, links/status on the right, and notes across the bottom.</p>
         </section>
 
-        <section class="section">
-            <article class="profile-card">
-                <h2>Webtoon <span class="grade grade-s">S</span></h2>
-                <p>Overall Grade: <strong>S = 98p</strong></p>
-                <ul class="badge-list">
-                    <li class="badge">Official</li>
-                    <li class="badge">Company</li>
-                    <li class="badge">Gold Standard</li>
-                    <li class="badge">Latest Chapters Paywalled</li>
-                    <li class="badge">Cheap</li>
-                    <li class="badge">Consistent</li>
-                    <li class="badge">High-Activity</li>
-                    <li class="badge">Official-Quality</li>
-                </ul>
-                <div class="score-grid">
-                    <div><strong>Readability</strong><span>S+ / 40p</span></div>
-                    <div><strong>Consistency</strong><span>S- / 18p</span></div>
-                    <div><strong>Translation Quality</strong><span>S+ / 30p</span></div>
-                    <div><strong>Localization Quality</strong><span>S / 10p</span></div>
-                    <div><strong>Picture Quality</strong><span>S / Very High</span></div>
+        <div class="translation-groups-layout">
+            <aside class="translation-side-panel" aria-label="Group directory">
+                <div class="section-header">
+                    <div>
+                        <h2>Group Directory</h2>
+                        <p>Each completed profile now has its own page with section navigation.</p>
+                    </div>
                 </div>
-                <h3>Notes</h3>
-                <ul class="notes-list">
-                    <li>The Canvas and Original series can be inconsistent, but only on rare occasion.</li>
-                </ul>
+                <div class="group-directory">
+                    <a href="Webtoon_Group.html"><strong>Webtoon</strong><span>S / 98p</span></a>
+                    <a href="Valir_Scans_Group.html"><strong>Valir Scans</strong><span>C- / 56p</span></a>
+                    <a href="MagusManga_Group.html"><strong>MagusManga</strong><span>D / 47p</span></a>
+                    <a href="Nyx_Scans_Group.html"><strong>Nyx Scans</strong><span>F- / 10p</span></a>
+                </div>
+            </aside>
+
+            <div class="translation-main-content">
+                <section class="profile-stack" aria-label="Completed translation group profiles">
+            <article class="group-profile" id="webtoon">
+                <div class="group-logo-cell">
+                    <div class="group-logo-mark">WT</div>
+                    <p class="eyebrow">Official Platform</p>
+                </div>
+                <div class="group-rank-cell">
+                    <h3>Rank</h3>
+                    <span class="grade grade-s">S</span>
+                    <p>98p overall</p>
+                </div>
+                <div class="group-tags-cell">
+                    <h3>Tags</h3>
+                    <ul class="badge-list">
+                    <li class="badge tag-status" data-tag-type="Status"><span class="tag-value">Official</span></li>
+                    <li class="badge tag-size" data-tag-type="Size"><span class="tag-value">Company</span></li>
+                    <li class="badge tag-standard" data-tag-type="Standard"><span class="tag-value">Gold Standard</span></li>
+                    <li class="badge tag-access" data-tag-type="Access"><span class="tag-value">Latest<br>Chapters<br>Paywalled</span></li>
+                    <li class="badge tag-pricing" data-tag-type="Pricing"><span class="tag-value">Cheap</span></li>
+                    <li class="badge tag-stability" data-tag-type="Stability"><span class="tag-value">Consistent</span></li>
+                    <li class="badge tag-activity" data-tag-type="Activity"><span class="tag-value">High‑Activity</span></li>
+                    <li class="badge tag-quality" data-tag-type="Quality"><span class="tag-value">Official‑Quality</span></li>
+                    </ul>
+                </div>
+                <header class="group-name-cell">
+                    <p class="eyebrow">Group Profile</p>
+                    <h2>Webtoon</h2>
+                    <p>Webtoon is the current official-quality reference point for the ranking framework.</p>
+                </header>
+                <section class="group-main-cell">
+                    <h3>Why This Rank</h3>
+                    <p>Webtoon earns the top current profile grade through excellent readability, very strong translation quality, consistent official standards, and very high picture quality.</p>
+                    <div class="score-grid">
+                        <div><strong>Readability</strong><span>S+ / 40p</span></div>
+                        <div><strong>Consistency</strong><span>S- / 18p</span></div>
+                        <div><strong>Translation</strong><span>S+ / 30p</span></div>
+                        <div><strong>Localization</strong><span>S / 10p</span></div>
+                        <div><strong>Picture</strong><span>S / Very High</span></div>
+                    </div>
+                </section>
+                <aside class="group-link-cell">
+                    <h3>Links</h3>
+                    <a href="Webtoon_Group.html">Full group page</a>
+                    <a href="Rankings.html">Overall rankings</a>
+                    <a href="Evaluation_Criteria.html">Criteria</a>
+                    <a href="Tag_Groups.html">Tags</a>
+                </aside>
+                <aside class="group-members-cell">
+                    <h3>Status</h3>
+                    <p>Company. Official translator. High-activity platform.</p>
+                </aside>
+                <section class="group-about-cell">
+                    <h3>About This Evaluation</h3>
+                    <ul class="notes-list">
+                        <li>The Canvas and Original series can be inconsistent, but only on rare occasion.</li>
+                    </ul>
+                </section>
             </article>
-        </section>
 
-        <section class="section">
-            <article class="profile-card">
-                <h2>Valir Scans <span class="grade grade-c">C-</span></h2>
-                <p>Overall Grade: <strong>C- = 56p</strong></p>
-                <ul class="badge-list">
-                    <li class="badge">MTL-Light</li>
-                    <li class="badge">Active</li>
-                    <li class="badge">Unofficial-Paid Translator</li>
-                    <li class="badge">Good in a Pinch</li>
-                    <li class="badge">Consistently-Inconsistent</li>
-                    <li class="badge">Okay</li>
-                    <li class="badge">Large Group</li>
-                </ul>
-                <div class="score-grid">
-                    <div><strong>Readability</strong><span>B- / 25p</span></div>
-                    <div><strong>Consistency</strong><span>C / 10p</span></div>
-                    <div><strong>Translation Quality</strong><span>C+ / 18p</span></div>
-                    <div><strong>Localization Quality</strong><span>D / 3p</span></div>
-                    <div><strong>Picture Quality</strong><span>C / Average</span></div>
+            <article class="group-profile" id="valir-scans">
+                <div class="group-logo-cell">
+                    <div class="group-logo-mark">VS</div>
+                    <p class="eyebrow">Unofficial Group</p>
                 </div>
-                <h3>Notes</h3>
-                <ul class="notes-list">
-                    <li>Readability was challenging to rank because the translations are technically readable, but unusual grammar often obscures or erases context.</li>
-                    <li>Consistency was difficult to pin down because the group is consistently inconsistent, but not in one particular way.</li>
-                    <li>Translation quality is poor objectively, but acceptable as a reference point.</li>
-                    <li>Localization suffers because unusual and often nonsensical grammar breaks context in confusing ways.</li>
-                    <li>Picture quality is average relative to competitors.</li>
-                </ul>
+                <div class="group-rank-cell">
+                    <h3>Rank</h3>
+                    <span class="grade grade-c">C-</span>
+                    <p>56p overall</p>
+                </div>
+                <div class="group-tags-cell">
+                    <h3>Tags</h3>
+                    <ul class="badge-list">
+                    <li class="badge tag-mtl" data-tag-type="MTL"><span class="tag-value">MTL‑Light</span></li>
+                    <li class="badge tag-activity" data-tag-type="Activity"><span class="tag-value">Active</span></li>
+                    <li class="badge tag-status" data-tag-type="Status"><span class="tag-value">Unofficial‑Paid<br>Translator</span></li>
+                    <li class="badge tag-judgment" data-tag-type="Judgment"><span class="tag-value">Good in a Pinch</span></li>
+                    <li class="badge tag-stability" data-tag-type="Stability"><span class="tag-value">Consistently‑Inconsistent</span></li>
+                    <li class="badge tag-quality" data-tag-type="Quality"><span class="tag-value">Okay</span></li>
+                    <li class="badge tag-size" data-tag-type="Size"><span class="tag-value">Large Group</span></li>
+                    </ul>
+                </div>
+                <header class="group-name-cell">
+                    <p class="eyebrow">Group Profile</p>
+                    <h2>Valir Scans</h2>
+                    <p>Valir Scans is the current pivot reference for readable but flawed translations.</p>
+                </header>
+                <section class="group-main-cell">
+                    <h3>Why This Rank</h3>
+                    <p>Valir Scans is technically readable and useful as a reference point, but unusual grammar and weak localization often obscure context.</p>
+                    <div class="score-grid">
+                        <div><strong>Readability</strong><span>B- / 25p</span></div>
+                        <div><strong>Consistency</strong><span>C / 10p</span></div>
+                        <div><strong>Translation</strong><span>C+ / 18p</span></div>
+                        <div><strong>Localization</strong><span>D / 3p</span></div>
+                        <div><strong>Picture</strong><span>C / Average</span></div>
+                    </div>
+                </section>
+                <aside class="group-link-cell">
+                    <h3>Links</h3>
+                    <a href="Valir_Scans_Group.html">Full group page</a>
+                    <a href="Rankings.html">Overall rankings</a>
+                    <a href="Evaluation_Criteria.html">Criteria</a>
+                    <a href="Tag_Groups.html">Tags</a>
+                </aside>
+                <aside class="group-members-cell">
+                    <h3>Status</h3>
+                    <p>Large group. Active. Unofficial paid translator.</p>
+                </aside>
+                <section class="group-about-cell">
+                    <h3>About This Evaluation</h3>
+                    <ul class="notes-list">
+                        <li>Readability was challenging to rank because the translations are technically readable, but unusual grammar often obscures or erases context.</li>
+                        <li>Consistency was difficult to pin down because the group is consistently inconsistent, but not in one particular way.</li>
+                        <li>Translation quality is poor objectively, but acceptable as a reference point.</li>
+                        <li>Localization suffers because unusual and often nonsensical grammar breaks context in confusing ways.</li>
+                        <li>Picture quality is average relative to competitors.</li>
+                    </ul>
+                </section>
             </article>
-        </section>
 
-        <section class="section">
-            <article class="profile-card">
-                <h2>MagusManga <span class="grade grade-d">D</span></h2>
-                <p>Overall Grade: <strong>D = 47p</strong></p>
-                <ul class="badge-list">
-                    <li class="badge">Recently Improved</li>
-                    <li class="badge">Inconsistent</li>
-                    <li class="badge">Schrodinger's Translation</li>
-                    <li class="badge">MTL</li>
-                    <li class="badge">Active</li>
-                    <li class="badge">Read at own Risk</li>
-                    <li class="badge">Genre-Dependent</li>
-                    <li class="badge">Series-Dependent</li>
-                </ul>
-                <div class="score-grid">
-                    <div><strong>Readability</strong><span>C / 20p</span></div>
-                    <div><strong>Consistency</strong><span>F- / 0p</span></div>
-                    <div><strong>Translation Quality</strong><span>B- / 20p</span></div>
-                    <div><strong>Localization Quality</strong><span>B / 7p</span></div>
-                    <div><strong>Picture Quality</strong><span>C / Average</span></div>
+            <article class="group-profile" id="magusmanga">
+                <div class="group-logo-cell">
+                    <div class="group-logo-mark">MM</div>
+                    <p class="eyebrow">Unofficial Group</p>
                 </div>
-                <h3>Notes</h3>
-                <ul class="notes-list">
-                    <li>Readability is affected by frequently missing panels and/or pages.</li>
-                    <li>Recently improved, but the improvement appears too recent to justify a higher overall ranking yet.</li>
-                    <li>Translation quality includes awkward phrasing, grammar, and sentence structure.</li>
-                </ul>
+                <div class="group-rank-cell">
+                    <h3>Rank</h3>
+                    <span class="grade grade-d">D</span>
+                    <p>47p overall</p>
+                </div>
+                <div class="group-tags-cell">
+                    <h3>Tags</h3>
+                    <ul class="badge-list">
+                    <li class="badge tag-stability" data-tag-type="Stability"><span class="tag-value">Recently Improved</span></li>
+                    <li class="badge tag-stability" data-tag-type="Stability"><span class="tag-value">Inconsistent</span></li>
+                    <li class="badge tag-joke" data-tag-type="Joke"><span class="tag-value">Schrodinger's<br>Translation</span></li>
+                    <li class="badge tag-mtl" data-tag-type="MTL"><span class="tag-value">MTL</span></li>
+                    <li class="badge tag-activity" data-tag-type="Activity"><span class="tag-value">Active</span></li>
+                    <li class="badge tag-judgment" data-tag-type="Judgment"><span class="tag-value">Read at own<br>Risk</span></li>
+                    <li class="badge tag-stability" data-tag-type="Stability"><span class="tag-value">Genre‑Dependent</span></li>
+                    <li class="badge tag-stability" data-tag-type="Stability"><span class="tag-value">Series‑Dependent</span></li>
+                    </ul>
+                </div>
+                <header class="group-name-cell">
+                    <p class="eyebrow">Group Profile</p>
+                    <h2>MagusManga</h2>
+                    <p>MagusManga has improved recently, but the improvement is not established enough to raise the profile higher yet.</p>
+                </header>
+                <section class="group-main-cell">
+                    <h3>Why This Rank</h3>
+                    <p>The current grade reflects recent improvements, inconsistent results, missing content issues, and awkward phrasing across evaluated work.</p>
+                    <div class="score-grid">
+                        <div><strong>Readability</strong><span>C / 20p</span></div>
+                        <div><strong>Consistency</strong><span>F- / 0p</span></div>
+                        <div><strong>Translation</strong><span>B- / 20p</span></div>
+                        <div><strong>Localization</strong><span>B / 7p</span></div>
+                        <div><strong>Picture</strong><span>C / Average</span></div>
+                    </div>
+                </section>
+                <aside class="group-link-cell">
+                    <h3>Links</h3>
+                    <a href="MagusManga_Group.html">Full group page</a>
+                    <a href="Rankings.html">Overall rankings</a>
+                    <a href="Evaluation_Criteria.html">Criteria</a>
+                    <a href="Tag_Groups.html">Tags</a>
+                </aside>
+                <aside class="group-members-cell">
+                    <h3>Status</h3>
+                    <p>Active. Inconsistent. Genre-dependent and series-dependent.</p>
+                </aside>
+                <section class="group-about-cell">
+                    <h3>About This Evaluation</h3>
+                    <ul class="notes-list">
+                        <li>Readability is affected by frequently missing panels and/or pages.</li>
+                        <li>Recently improved, but the improvement appears too recent to justify a higher overall ranking yet.</li>
+                        <li>Translation quality includes awkward phrasing, grammar, and sentence structure.</li>
+                    </ul>
+                </section>
             </article>
-        </section>
 
-        <section class="section">
-            <article class="profile-card">
-                <h2>Nyx Scans <span class="grade grade-f">F-</span></h2>
-                <p>Overall Grade: <strong>F- = 10p</strong></p>
-                <ul class="badge-list">
-                    <li class="badge">MTL</li>
-                    <li class="badge">Inconsistent</li>
-                    <li class="badge">Poor</li>
-                    <li class="badge">"Readable"</li>
-                    <li class="badge">Avoid at all costs</li>
-                    <li class="badge">High-Activity</li>
-                    <li class="badge">Large Group</li>
-                    <li class="badge">Unofficial-Paid Translator</li>
-                </ul>
-                <div class="score-grid">
-                    <div><strong>Readability</strong><span>F / 5p</span></div>
-                    <div><strong>Consistency</strong><span>F- / 0p</span></div>
-                    <div><strong>Translation Quality</strong><span>F / 5p</span></div>
-                    <div><strong>Localization Quality</strong><span>F / 0p</span></div>
-                    <div><strong>Picture Quality</strong><span>D / Poor</span></div>
+            <article class="group-profile" id="nyx-scans">
+                <div class="group-logo-cell">
+                    <div class="group-logo-mark">NYX</div>
+                    <p class="eyebrow">Unofficial Group</p>
                 </div>
-                <h3>Notes</h3>
-                <ul class="notes-list">
-                    <li>Looks readable at first glance, but falls apart once compared to competent translations.</li>
-                    <li>Incredibly inconsistent in almost every metric that matters.</li>
-                    <li>Frequently uses incorrect pronouns, making it difficult to figure out who is talking or who is being referenced.</li>
-                    <li>Frequently uses incorrect, unsuitable, or nonsensical grammar.</li>
-                    <li>Frequently mistranslates concepts and situations, causing confusion.</li>
-                    <li>Makes almost no attempt to use proper localization.</li>
-                    <li>Picture quality is low and sometimes grainy.</li>
-                </ul>
-            </article>
-        </section>
+                <div class="group-rank-cell">
+                    <h3>Rank</h3>
+                    <span class="grade grade-f">F-</span>
+                    <p>10p overall</p>
+                </div>
+                <div class="group-tags-cell">
+                    <h3>Tags</h3>
+                    <ul class="badge-list">
+                    <li class="badge tag-mtl" data-tag-type="MTL"><span class="tag-value">MTL</span></li>
+                    <li class="badge tag-stability" data-tag-type="Stability"><span class="tag-value">Inconsistent</span></li>
+                    <li class="badge tag-quality" data-tag-type="Quality"><span class="tag-value">Poor</span></li>
+                    <li class="badge tag-joke" data-tag-type="Joke"><span class="tag-value">"Readable"</span></li>
+                    <li class="badge tag-judgment" data-tag-type="Judgment"><span class="tag-value">Avoid at all<br>costs</span></li>
+                    <li class="badge tag-activity" data-tag-type="Activity"><span class="tag-value">High‑Activity</span></li>
+                    <li class="badge tag-size" data-tag-type="Size"><span class="tag-value">Large Group</span></li>
+                    <li class="badge tag-status" data-tag-type="Status"><span class="tag-value">Unofficial‑Paid<br>Translator</span></li>
+                    </ul>
+                </div>
+                <header class="group-name-cell">
+                    <p class="eyebrow">Group Profile</p>
+                    <h2>Nyx Scans</h2>
+                    <p>Nyx Scans is the current lower-bound reference point for the overall grading system.</p>
+                </header>
+                <section class="group-main-cell">
+                    <h3>Why This Rank</h3>
+                    <p>The group looks readable at a glance, but the translation falls apart under comparison because of consistency, grammar, pronoun, and localization issues.</p>
+                    <div class="score-grid">
+                        <div><strong>Readability</strong><span>F / 5p</span></div>
+                        <div><strong>Consistency</strong><span>F- / 0p</span></div>
+                        <div><strong>Translation</strong><span>F / 5p</span></div>
+                        <div><strong>Localization</strong><span>F / 0p</span></div>
+                        <div><strong>Picture</strong><span>D / Poor</span></div>
+                    </div>
+                </section>
+                <aside class="group-link-cell">
+                    <h3>Links</h3>
+                    <a href="Nyx_Scans_Group.html">Full group page</a>
+                    <a href="Rankings.html">Overall rankings</a>
+                    <a href="Evaluation_Criteria.html">Criteria</a>
+                    <a href="Tag_Groups.html">Tags</a>
+                </aside>
+                <aside class="group-members-cell">
+                    <h3>Status</h3>
+                    <p>Large group. High-activity. Unofficial paid translator.</p>
+                </aside>
+                <section class="group-about-cell">
+                    <h3>About This Evaluation</h3>
+                    <ul class="notes-list">
+                        <li>Looks readable at first glance, but falls apart once compared to competent translations.</li>
+                        <li>Incredibly inconsistent in almost every metric that matters.</li>
+                        <li>Frequently uses incorrect pronouns, making it difficult to figure out who is talking or who is being referenced.</li>
+                        <li>Frequently uses incorrect, unsuitable, or nonsensical grammar.</li>
+                        <li>Frequently mistranslates concepts and situations, causing confusion.</li>
+                        <li>Makes almost no attempt to use proper localization.</li>
+                        <li>Picture quality is low and sometimes grainy.</li>
+                    </ul>
+                    </section>
+                </article>
+            </section>
 
-        <section class="section">
-            <div class="section-header">
-                <div>
-                    <h2>Overview-Only Groups</h2>
-                    <p>These groups appear in the overall tier list but do not yet have a detailed website profile.</p>
+            <section class="section">
+                <div class="section-header">
+                    <div>
+                        <h2>Overview-Only Groups</h2>
+                        <p>These groups appear in the overall tier list but do not yet have a detailed website profile.</p>
+                    </div>
                 </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tier</th>
+                                <th>Groups</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Tier 5</td><td>BoredCoronaKids; Leslie and the Victims.</td></tr>
+                            <tr><td>Tier 4</td><td>KS Group; LHTranslation; Asurascans; Flamecomics.</td></tr>
+                            <tr><td>Tier 3</td><td>DivaScans; thunderscans; QI Scans; StoneScape; RinkoComics; Violet Scans; Siren Scans; ROKARI COMICS; SnowyPuffx; EZMANGA.</td></tr>
+                            <tr><td>Tier 2</td><td>UTOON; Lua Comic; RESET SCANS; XNutScans; Vortexscans; GenzToons.</td></tr>
+                            <tr><td>Tier 1</td><td>Necro Scans; Fairy Scans; Luna Toons; Eris Scans; Timeless Toons; Eva Scans; Philliascans.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
             </div>
-            <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tier</th>
-                            <th>Groups</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Tier 5</td><td>BoredCoronaKids; Leslie and the Victims.</td></tr>
-                        <tr><td>Tier 4</td><td>KS Group; LHTranslation; Asurascans; Flamecomics.</td></tr>
-                        <tr><td>Tier 3</td><td>DivaScans; thunderscans; QI Scans; StoneScape; RinkoComics; Violet Scans; Siren Scans; ROKARI COMICS; SnowyPuffx; EZMANGA.</td></tr>
-                        <tr><td>Tier 2</td><td>UTOON; Lua Comic; RESET SCANS; XNutScans; Vortexscans; GenzToons.</td></tr>
-                        <tr><td>Tier 1</td><td>Necro Scans; Fairy Scans; Luna Toons; Eris Scans; Timeless Toons; Eva Scans; Philliascans.</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>
+
+

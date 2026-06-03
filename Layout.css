@@ -314,16 +314,110 @@ main {
 .grade {
     border: 1px solid #415468;
     border-radius: 6px;
+    box-sizing: border-box;
     color: var(--soft);
     display: inline-flex;
     font-size: 0.82rem;
     font-weight: 800;
     line-height: 1.2;
+    max-width: 100%;
     padding: 5px 8px;
 }
 
 .badge {
     background: #24303d;
+}
+
+.badge[data-tag-type] {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    hyphens: none;
+    overflow-wrap: normal;
+    white-space: normal;
+    width: max-content;
+    word-break: normal;
+}
+
+.badge[data-tag-type] .tag-value {
+    display: block;
+    max-width: 100%;
+}
+
+.badge[data-tag-type]::before {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    color: var(--text);
+    content: attr(data-tag-type);
+    font-size: 0.66rem;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.tag-stability {
+    background: #102f3d;
+    border-color: #70d6ff;
+}
+
+.tag-quality {
+    background: #173022;
+    border-color: #74d99f;
+}
+
+.tag-joke {
+    background: #2c2140;
+    border-color: #c5a3ff;
+}
+
+.tag-judgment {
+    background: #3a1b1f;
+    border-color: #ff6b6b;
+}
+
+.tag-access {
+    background: #332715;
+    border-color: #f2c14e;
+}
+
+.tag-pricing {
+    background: #392514;
+    border-color: #ffb06b;
+}
+
+.tag-reputation {
+    background: #223019;
+    border-color: #a7d66d;
+}
+
+.tag-standard {
+    background: #1e3045;
+    border-color: #8bbcff;
+}
+
+.tag-mtl {
+    background: #351f3a;
+    border-color: #e68aff;
+}
+
+.tag-proofreading {
+    background: #20333a;
+    border-color: #7be7d4;
+}
+
+.tag-activity {
+    background: #2a2d18;
+    border-color: #d8d66d;
+}
+
+.tag-size {
+    background: #29263a;
+    border-color: #a7a3ff;
+}
+
+.tag-status {
+    background: #1d3340;
+    border-color: #7fd0ff;
 }
 
 .grade {
@@ -361,9 +455,8 @@ table {
     width: 100%;
 }
 
-tbody tr:hover, 
-tbody tr th:hover,
-tbody tr td:hover {
+thead th:hover,
+tbody td:hover {
     background: #1d222d;
 }
 
@@ -470,5 +563,13 @@ tr:last-child td {
     .grid.three,
     .grid.four {
         grid-template-columns: 1fr;
+    }
+
+    .badge[data-tag-type] {
+        overflow-wrap: anywhere;
+    }
+
+    .badge[data-tag-type] .tag-value {
+        overflow-wrap: anywhere;
     }
 }
